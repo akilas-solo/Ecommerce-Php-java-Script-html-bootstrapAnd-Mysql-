@@ -1,0 +1,86 @@
+
+
+
+Table: Products
+
+product_id (Primary Key)
+product_name
+description
+price
+image_url
+category_id (Foreign Key)
+
+
+Table: Categories
+
+category_id (Primary Key)
+category_name
+
+
+Table: Customers
+
+customer_id (Primary Key)
+first_name
+last_name
+email
+password
+address
+city
+state
+country
+zip_code
+
+
+Table: Shopping Carts
+
+cart_id (Primary Key)
+customer_id (Foreign Key)
+created_at
+
+Table: Cart Items
+
+item_id (Primary Key)
+cart_id (Foreign Key)
+product_id (Foreign Key)
+quantity
+
+
+Table: Orders
+
+order_id (Primary Key)
+customer_id (Foreign Key)
+order_date
+total_amount
+status
+
+
+Table: Order Items
+
+item_id (Primary Key)
+order_id (Foreign Key)
+product_id (Foreign Key)
+quantity
+price_per_unit
+
+
+
+In this schema, the Products table stores information about each product, including its name, description, 
+
+price, image URL, and category. The Categories table stores the different categories of clothing.
+
+The Customers table stores customer information, such as their name, email, password, and address details.
+
+The Shopping Carts table is used to store information about each customer's shopping cart, 
+including the customer ID and the creation date.
+
+The Cart Items table maintains the association between a shopping cart and the individual products added to it. It stores the quantity of each product in the cart.
+
+The Orders table stores information about each completed order, including the customer ID, order date, total amount, and order status.
+
+The Order Items table maintains the association between an order and the individual products ordered. It stores the quantity of each product and the price per unit at the time of the order.
+
+Please note that this is a simplified example, and depending on the specific requirements of your e-commerce store, you may need to include additional tables or columns to capture more details.
+
+Remember to define appropriate relationships between the tables using primary and foreign keys, and consider adding indexes for efficient querying and performance optimization.
+
+I hope this provides a good starting point for designing your e-commerce clothing store database!

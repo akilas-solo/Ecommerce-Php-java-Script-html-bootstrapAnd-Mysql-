@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#navbar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 7px 15px;
+    position: relative;
+    background: #464647;
+}
+#navbar li:hover{
+    color: #20b066;
+}
+
+#navbar li a:hover,a.active{
+    color: #20b066;
+}
+/* Custom CSS */
+.navbar {
+    background-color: #464647;
+    /* Change background color */
+}
+
+.navbar-nav .nav-link {
+    color: #ECE4E4;
+    /* Change text color */
+    background-color: #464647;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    /* Add transition for smooth hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #464647;
+    /* Change background color on hover */
+}
+
+.dropdown-menu {
+    background-color: #464647;
+    /* Change background color of dropdown menu */
+}
+.dropdown-toggle{
+    background-color: #464647;
+    text-decoration: none;
+}
+
+#navbar .dropdown-menu {
+    color: #ffffff;
+    /* Change text color of dropdown items */
+    padding: 10px 20px;
+    background-color: #464647;
+}
+#navbar .dropdown-menu a:hover{
+    text-decoration: none;
+    color: #20ac64;
+}
+#navbar .dropdown:hover{
+    color: #20ac64;
+}
+
+
+.Update{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+}
+.card-heder{
+     border-top-left-radius: 6px;
+     border-top-right-radius: 6px;
+     border: none;
+    }
+
+#save{
+    width: 100px;
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(49, 119, 46);
+    border:none; 
+    margin-right: 10px;
+    float: right;
+    
+}
+
+#save:hover{
+    background-color: rgb(70, 148, 75);
+    box-shadow: 4px 5px 5px  rgb(145, 143, 143);
+    
+}
+
+#back{
+    width: 100px;
+    float: right;
+    margin-right: 10px;
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(46, 63, 139);
+    border:none;
+    
+}
+#back:hover{
+    background-color: rgb(71, 90, 177);
+    box-shadow: 4px 5px 5px  rgb(145, 143, 143);
+    
+}
+#custem_back{
+    width: 100px;
+    padding: 7px;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: rgba(46, 63, 139, 0.753);
+    float: left;
+    border:none;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#custem_back:hover{
+    background-color: rgb(71, 90, 177);
+    box-shadow: 4px 5px 5px  rgb(145, 143, 143);
+    
+}
+
+
+
+
+
+.custem_panal table{
+    border-radius: 20px;
+}
+#footer{
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-top: 20px;
+    bottom: 0;
+}
+#footer .coll-1 ,.coll-2{
+    margin-right: 0px;
+}
+#footer .coll-4{
+    margin-right: 0px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.table-biutiy{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th {
+  color: #fff;
+  font-size: 10px;
+}
+tbody td img{
+  width: 100px;
+}
+tbody tr td {
+  font-size: 15px;
+}
+
+.card {
+  border-radius: .5rem;
+}
+
+
+.table-scroll table thead th {
+  font-size: 1rem;
+}
+thead {
+  top: 0;
+  position: sticky;
+}
+
+
+/* Custemer Table */
+body {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.table th, .table td {
+    font-size: 0.875rem;
+}
+.form-check-label {
+    font-size: 0.875rem;
+}
+.input-group .form-control {
+    font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 0.875rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    .table th, .table td {
+        font-size: 0.75rem;
+    }
+    .form-check-label {
+        font-size: 0.75rem;
+    }
+    .input-group .form-control {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 0.75rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .table th, .table td {
+        font-size: 0.625rem;
+    }
+    .form-check-label {
+        font-size: 0.625rem;
+    }
+    .input-group .form-control {
+        font-size: 0.625rem;
+    }
+}

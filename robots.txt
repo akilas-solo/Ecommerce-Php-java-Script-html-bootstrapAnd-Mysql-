@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /html/Admin/Add_product.php
+Disallow: /html/Admin

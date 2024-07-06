@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    line-height: 14px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+.limited-text {
+    max-width: 200px;
+    max-height: 50px;
+    overflow: hidden;
+}
+/* global button */
+button.normal{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #222;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+/* Header Sction */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: #464647;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index: 999; 
+    position: sticky;
+    top: 0;
+    left: 0;  
+    z-index: 1000;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#navbar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 7px 15px;
+    position: relative;
+    background: #464647;
+}
+#navbar li:hover{
+    color: #20b066;
+}
+
+#navbar li a:hover,a.active{
+    color: #20b066;
+}
+/* Custom CSS */
+.navbar {
+    background-color: #464647;
+    /* Change background color */
+}
+
+.navbar-nav .nav-link {
+    color: #ECE4E4;
+    /* Change text color */
+    background-color: #464647;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    /* Add transition for smooth hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #464647;
+    /* Change background color on hover */
+}
+
+.dropdown-menu {
+    background-color: #464647;
+    /* Change background color of dropdown menu */
+}
+.dropdown-toggle{
+    background-color: #464647;
+    text-decoration: none;
+}
+
+#navbar .dropdown-menu {
+    color: #ffffff;
+    /* Change text color of dropdown items */
+    padding: 10px 20px;
+    background-color: #464647;
+}
+#navbar .dropdown-menu a:hover{
+    text-decoration: none;
+    color: #20ac64;
+}
+#navbar .dropdown:hover{
+    color: #20ac64;
+}
+
+
+
+
+/* Home page Section */
+
+#hero{
+    background-image: url("../Traditional_Clothses/home1.jfif");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #20b066;
+}
+.btn1 {
+   color: #f8faf9;
+   background:#20b066;
+   padding: 14px 80px 14px 65px;
+   border: 0;
+   border-radius: 15px;
+   box-shadow:#465b52;
+   /* background-repeat: no-repeat; */
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 15px;
+}
+
+
+
+     /* Product Card Header */
+
+
+#product1{
+     text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid hsl(150, 27%, 83%);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.08);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+     text-align: start;
+     padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #60786e;
+    font-size: 16px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #323030;
+    font-size: 18px;
+}
+#product1 .pro .des .star i{
+    font-size: 19px;
+    color: rgb(224, 216, 68);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #23e983;
+}
+#product1 .pro #cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #efe5e5;
+    color: #53d994;
+    border: 1px solid #23e983;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro #cart:hover{
+    color: #10ea79;
+    border: 1px solid #11e97a;
+    background-color: #9be6bb;
+}
+
+/* First Banner */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../img/banner/b2.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+#banner h2{
+    color: wheat;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: red;
+}
+
+#banner button:hover{
+    color: wheat;
+    background-color: #20ac64;
+}
+/* Banner Section */
+#sm-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#sm-banner .banner-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 15px;
+     background-image: url('../img/banner/b17.jpg');
+     min-width: 630px;
+     border-radius: 5px;
+     height: 50vh;
+     background-size: cover;
+     background-position: center;
+}
+#sm-banner .banner-box:nth-child(2){
+    background-image: url('../img/banner/b16.jpg');
+}
+
+#sm-banner h4{
+    color: white;
+    font-size:20px;
+    font-weight: 300px;
+}
+#sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+#sm-banner button{
+    background: transparent;
+    border: 1.5px solid rgb(253, 253, 252);
+    padding: 18px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#sm-banner .banner-box:hover  button{
+    background-color: #20b066;
+    border: 1px solid #20b066;
+}
+
+
+/* Baner Section */
+#banner3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url('../img/banner/b7.jpg');
+    min-width: 30%;
+    border-radius: 5px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box:nth-child(2){
+    background-image: url('../img/banner/b4.jpg');
+}
+#banner3 .banner-box:nth-child(3){
+    background-image: url('../img/banner/b10.jpg');
+}
+
+#banner3 h2{
+      color: white;
+      font-weight: 900;
+      font-size: 32px;
+}
+
+#banner3 h3{
+      color: rgb(241, 80, 80);
+      font-weight: 800;
+      font-size: 19px;
+}
+
+/* New latter Section */
+
+#newslatter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('../img/banner/b14.png');
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-color: #041e42;
+}
+
+#newslatter h4{
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+#newslatter p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newslatter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newslatter .form{
+    display: flex;
+    width: 40%;
+}
+#newslatter button{
+    background-color: #20ac64;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Start Medea Query */
+
+@media screen and (max-width: 799px) {
+    .section-m1{
+        padding: 40px 40px;
+    }
+    #navbar{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #edf0f3;
+        box-shadow: 0 40px 60px rgb(0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: .8s;
+    }
+    .active1{
+        right: 0px !important;   
+    }
+    #close{
+        display: inline;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 22px;
+        color: #323030;
+    }
+    #navbar li{
+        margin-bottom: 30px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #403d3d;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    .banner-box{
+        margin-top: 15px;
+    }
+    #lg-bag{
+        display: none;
+    }
+
+    /* feature Box */
+    #feature{
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        width: 28%;
+    }
+    #newslatter input {
+        width: 70%;
+    }
+    .cart-table-container {
+        display:none !important; 
+    }
+    .phone-cart{
+        display: flex !important;
+        text-align: center;
+        flex-direction: column;
+        margin: 10px 0 0 0 !important;
+        width: 100% !important;
+        height: 240px;
+    }
+    .cart-table-container {
+        display:none !important; 
+    }
+    .phone-cart disc{
+        text-align: center; /* center the content inside .disc */
+        
+    }
+    #cart-image{
+        width: 50%;
+        height: 20vh;
+        border: 0.3px solid  #222325;
+        border-radius: 10px;
+        margin: 10px 14px 0px 0;  
+    }
+    #discription h4,h5{
+        margin: 20px 19px 0 0 !important;
+        font-size: 20px;
+    }
+    /* Cart For Mobile */
+    .phone-cart{
+        overflow-y: auto;
+    }
+    .phone-cart h3{
+        font-size: 27px;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 600;
+        margin: 20px 0 20px 0;
+    }
+    .phone-cart .disc button{
+        margin-top: 10px;
+    }
+    .cart-desc .disc{
+        margin-top: 20px;
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+      
+    }
+    .cart-desc .disc #discription .mobile-view-description h5{
+        font-size: 35px;
+        font-family:'Courier New', Courier, monospace;
+    } 
+
+
+}
+
+
+
+@media screen and (max-width: 477px){
+    .section-m1{
+        padding: 20px;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding: 10px 30px;
+        background-position: start;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #sm-banner .banner-box {
+        min-width: 300px;
+        height: 50vh;
+    }
+    #banner3 .banner-box{
+        padding: 0 20px;
+    }
+    #banner3 .banner-box{
+        width: 100%;
+    }
+    #newslatter .form {
+        width: 100%;
+    }
+    #footer .col-1,.col-2,.col-3 {
+        margin-bottom: 17px;
+    }
+    /* Product detaile */
+    .detaile_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .single-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .product-description h3{
+        margin-top: 20px;
+    }
+    #who-we-are{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    #who-we-are .disc-img{
+        margin: 10px 3px 0 3px;
+    }
+    #cart{
+        display: flex;
+        flex-direction: column;
+    }
+    #cart .cart-table-container{
+        width: 100%;
+    }
+    #cart .cart-desc{
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+    #cart .cart-table-container .disc{
+        display: flex;
+        flex-direction: column;
+    }
+    #cart .cart-table-container .disc button{
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    #discription h2,h4{
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+
+    .phone-cart{
+        display: flex !important;
+        text-align: center;
+        flex-direction: column;
+        margin: 10px 0 0 0 !important;
+        width: 100% !important;
+        height: 240px;
+    }
+    .cart-table-container {
+        display:none !important; 
+    }
+    .phone-cart disc{
+        text-align: center; /* center the content inside .disc */
+        
+    }
+    #cart-image{
+        width: 50%;
+        height: 20vh;
+        border: 0.3px solid  #222325;
+        border-radius: 10px;
+        margin: 10px 14px 0px 0;  
+    }
+    #discription h4,h5{
+        margin: 20px 19px 0 0 !important;
+        font-size: 20px;
+    }
+    .phone-cart{
+        overflow-y: auto;
+    }
+    .phone-cart h3{
+        font-size: 25px;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 600;
+        margin: 20px 0 20px 0;
+    }
+    .phone-cart .disc button{
+        margin-top: 10px;
+    }
+    .cart-desc .disc{
+        margin-top: 20px;
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+      
+    }
+    .cart-desc .disc #discription .mobile-view-description h5{
+        font-size: 20px;
+        font-family:'Courier New', Courier, monospace;
+    } 
+    .product-description .para{
+        width: fit-content !important;
+    }
+    .product-description .para p{
+        width: fit-content !important;
+    }
+
+}
+
+

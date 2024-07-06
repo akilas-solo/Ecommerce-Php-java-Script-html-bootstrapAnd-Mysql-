@@ -1,0 +1,307 @@
+    /*  styles for the home section */
+    #home {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #home-sec {
+        position: relative;
+    }
+    /* Styles for the button */
+    /* Button Styles */
+    .btn1 {
+        background: white;
+        color: #6f4e37;
+        /* Coffee color */
+        border: 2px solid #6f4e37;
+        padding: 10px 40px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        left: 45%;
+        outline: none;
+        
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn1 .icon {
+        opacity: 0;
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .btn1:hover .icon {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+
+    .btn1:hover {
+        background: #f4f4f4;
+        border-color: #6f4e37;
+        transform: translateY(-5px);
+
+    }
+
+    .btn1:active {
+        transform: scale(0.95);
+    }
+
+    /* Animation keyframes for headings and text */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Apply animations to content elements */
+    .content h4,
+    .btn1 {
+        animation: fadeInUp 1s ease-out 0.3s forwards;
+        opacity: 0;
+    }
+
+    .content h2 {
+        animation: fadeInUp 1s ease-out 0.6s forwards;
+        opacity: 0;
+    }
+
+    .content h1 {
+        animation: fadeInUp 1s ease-out 0.9s forwards;
+        opacity: 0;
+    }
+
+    .content p {
+        animation: fadeIn 1s ease-out 1.2s forwards;
+        opacity: 0;
+    }
+
+    .content .btn1 {
+        animation: fadeIn 1s ease-out 1.5s forwards;
+        opacity: 0;
+    }
+
+    /* Carosel Style Section */
+    .carousel-item .col {
+        position: relative;
+    }
+
+    .carousel-item .col .text-overlay {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        /* Example of using a custom font */
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        color: rgb(38, 33, 33);
+        transition: opacity 0.5s ease;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+        /* Glowing effect */
+    }
+
+
+
+    .carosel-h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 60px;
+    }
+
+
+    .equal-height-img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    /* Image Baner Section  */
+    .column-content {
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      .column-content img {
+        max-width: 100%;
+        width: 300px; /* Increase image size to 300px */
+        height: 250px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .column-content:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .column-content:hover img {
+        transform: scale(1.1);
+      }
+      .column-description {
+        margin-top: 10px;
+      }
+
+
+      /* Nava Bar */
+
+    .navbar {
+        background-color: #464647;
+        /* Change background color */
+    }
+
+    .navbar-nav .nav-link {
+        color: #ECE4E4;
+        /* Change text color */
+        background-color: #464647;
+        font-size: 20px;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+        /* Add transition for smooth hover effect */
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #464647;
+        /* Change background color on hover */
+    }
+
+    .dropdown-menu {
+        background-color: #464647;
+        /* Change background color of dropdown menu */
+    }
+    .dropdown-toggle{
+        background-color: #464647;
+        text-decoration: none;
+    }
+
+    .dropdown-item {
+        color: #ffffff;
+        /* Change text color of dropdown items */
+        padding: 10px 20px;
+        background-color: #464647;
+    }
+
+
+
+    /* footer Section */
+
+    .footer {
+        background: linear-gradient(135deg, #1f1e1e, #2c2c2c);
+        /* Dark gradient background */
+        color: #ffffff;
+        padding: 40px 0;
+        font-family: 'Arial', sans-serif;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-top: auto;
+        transition: box-shadow 0.3s ease;
+        /* Add transition for box-shadow */
+    }
+
+    .footer:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        /* Increase shadow intensity on hover */
+    }
+
+    .footer h5 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #FFFFFE;
+        /* Yellow color for headings */
+        transition: color 0.3s ease;
+        /* Add transition for heading color */
+    }
+
+    .footer h5:hover {
+        color: #ffffff;
+        /* Change heading color to white on hover */
+    }
+
+    .footer p {
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color 0.3s ease;
+        /* Add transition for paragraph color */
+    }
+
+    .footer p:hover {
+        color: #7B7976;
+        /* Yellow color for paragraph on hover */
+    }
+
+    .footer .row>div {
+        margin-bottom: 30px;
+    }
+
+    .footer .row>div:hover {
+        transform: translateY(-5px);
+        transition: .8s;
+        /* Move the element upward on hover */
+    }
+
+    .footer .row>div p {
+        margin: 0;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+        transition: transform 0.3s ease, color 0.3s ease;
+        /* Add transition for color and transform */
+    }
+
+    .social-icons a:hover {
+        color: #F2EDDB;
+        /* Yellow color on hover */
+        transform: translateY(-5px);
+        /* Add a slight upward movement on hover */
+    }
+
+    .copy-right {
+        background-color: #1f1e1e;
+        /* Dark background for copyright section */
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .copy-right p {
+        margin: 0;
+    }
+
+    .copy-right p:hover {
+        color: #E3E2DE;
+        /* Yellow color for copyright text on hover */
+    }

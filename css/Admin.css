@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Admin-section{
+  display: flex;
+  justify-content: center;
+  margin-right: 0px;
+}
+.container_form{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.cart-database{
+  max-width: 600px;
+  width: 100%;
+  margin-left: 40px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.cart-database-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Custemer_info{
+    margin-left: 40px;
+}
+
+#view_info{
+  width: 100px;
+  margin-right: 10px;
+  padding: 7px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #366db5, #3c75d6);
+  border:none;
+  margin-top: 10px;
+}
+
+#view_info:hover{
+  background: linear-gradient(135deg, #4d83c9, #386cc7);
+  box-shadow: 4px 5px 5px  rgb(145, 143, 143);
+  
+}
+.orderd-cart{
+  text-align: center;
+  align-items: center;
+}
+.orderd-cart h3{
+  font-size: 27px;
+  font-family: 'Courier New', Courier, monospace;
+  margin:0 0 10px;
+}
+.orderd-cart  span{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  margin:10px 0 10px;
+}
+.Totall-cart-admin{
+  text-align: center;
+}
+.Totall-cart-admin h3{
+  font-size: 27px;
+  font-family: 'Courier New', Courier, monospace;
+  margin:0 0 10px;
+}
+.Totall-cart-admin  span{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  margin:10px 0 10px;
+}
+
+.container_form .title {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container_form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 200px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box .input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box .textarea {
+  max-height: 100px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #366db5, #3c75d6);
+}
+
+/* file Chooser */
+
+.input-box .file-input {
+  position: relative;
+  display: inline-block;
+}
+
+.input-box #cart-image[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.input-box label {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-box .file-icon {
+  margin-right: 8px;
+}
+
+.input-box .file-name {
+  color: #333;
+}
+
+.input-box label:hover,
+.input-box label:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+form .button input:hover {
+  background: linear-gradient(135deg, #2a5a99, #3366bd);
+}
+
+
+/* Add more media queries for larger screens if needed */
+ @media(max-width: 584px){
+ .container_form{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  /* For Mobile */
+  @media(max-width: 459px){
+  .container_form .content .category{
+    flex-direction: column;
+  }
+  .Admin-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-database-info{
+     width: 100%;
+     margin: 10px 0 10px 0;
+  }
+  .container_table{
+    width: 100%;
+    overflow-x: auto;
+    margin: 5px 0px 0px 0px;
+  }
+  .Remove_btn , .Edit_btn{
+    width: 50px;
+  }
+  .container_table{
+    width: 100%;
+    margin: 5px 0px 0px 0px !important;
+  }
+}
+
+/* Table Sction */
+
+
+.Edit_btn {
+  display: inline-block;
+  background-color: #448346;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+.Edit_btn:hover {
+  color: white;
+  background-color: #4a994e;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.15);
+}
+.Remove_btn{
+  text-decoration: none;
+  display: inline-block;
+  background-color: #c55959;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  width: 100px;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+.Remove_btn:hover {
+  color: white;
+  background-color: #ac4343;
+  box-shadow: 0 10px 16px rgba(0,0,0,0.15);
+}
+@media (max-width: 1024px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  td img {
+    width: 80px;
+  }
+
+  .Edit_btn,
+  .Remove_btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  td img {
+    width: 60px;
+  }
+
+  .Edit_btn,
+  .Remove_btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+
+  td img {
+    width: 40px;
+  }
+
+  .Edit_btn,
+  .Remove_btn {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  td img {
+    width: 60px;
+  }
+
+  .Edit_btn,
+  .Remove_btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,280 @@
+/* Custom CSS */
+.navbar {
+    background-color: #464647;
+    /* Change background color */
+}
+
+.navbar-nav .nav-link {
+    color: #F8F4F4;
+    /* Change text color */
+    background-color: #464647;
+    font-size: 24px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    /* Add transition for smooth hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #464647;
+    /* Change background color on hover */
+}
+
+.dropdown-menu {
+    background-color: #464647;
+    /* Change background color of dropdown menu */
+}
+
+.dropdown-item {
+    color: #ffffff;
+    /* Change text color of dropdown items */
+    padding: 10px 20px;
+    background-color: #464647;
+}
+
+.nav-item .dropdown {
+    background-color: #464647 !important;
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #464647 !important;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.dropdown-toggle {
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.8s;
+}
+
+.feature-item h2,
+h3 {
+    color: #20b066;
+    margin-bottom: 20px;
+}
+
+.feature-item p,
+.feature-item ul {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20b066;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1a8c5e;
+}
+
+
+
+.section-m1 .discription {
+    color: #000000;
+    /* Set text color to black */
+}
+
+
+
+/* contact us form */
+
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #464647 !important;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.form-control:focus {
+    border-color: #464647 !important;
+    box-shadow: 0 0 0 0.2rem rgba(70, 70, 71, 0.25);
+}
+
+.btn-primary {
+    background-color: #464647 !important;
+    border-color: #464647 !important;
+}
+
+.btn-primary:hover {
+    background-color: #2a2b2b;
+    border-color: #2a2b2b;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 585px;
+    /* Adjust height as needed */
+    background: linear-gradient(rgba(254, 254, 255, 0.184), rgba(221, 162, 35, 0.636));
+    z-index: 2;
+    /* Ensure the overlay is above other elements */
+}
+
+
+#home {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(254, 254, 255, 0.184), rgba(221, 162, 35, 0.636));
+
+}
+
+#home-sec {
+    position: relative;
+    z-index: 1;
+}
+
+.con {
+    color: white;
+    font-size: 40px;
+    top: 50px;
+    margin-top: 70px !important;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.content h3 {
+    animation: fadeInUp 1s ease-out 0.9s forwards;
+    opacity: 0;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.2);
+    /* White background with transparency */
+    border: none;
+    /* Optional: remove border */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: subtle shadow */
+    border-radius: 15px;
+    /* Optional: rounded corners */
+    padding: 20px;
+    /* Add padding for better spacing */
+}
+
+.glass-form .form-group label,
+.glass-form .form-control,
+.glass-form .btn {
+    background: rgba(255, 255, 255, 0.1);
+    /* Ensure internal elements are also transparent */
+    backdrop-filter: blur(10px);
+    /* Maintain frosted effect */
+    border-radius: 5px;
+    /* Optional: rounded corners for inputs */
+    padding: 5px;
+    /* Optional: add padding to inputs and labels */
+}
+
+.glass-form .form-group {
+    margin-bottom: 10px;
+    /* Space between form groups */
+}
+
+.glass-form .btn {
+    background: rgba(0, 123, 255, 0.6);
+    /* Semi-transparent button background */
+    border: none;
+    /* Remove button border */
+    color: white;
+    /* Button text color */
+}
+
+.glass-form .btn:hover {
+    background: rgba(0, 123, 255, 0.8);
+    /* Slightly less transparent on hover */
+}
+
+
+
+.nav-link {
+    position: relative;
+    /* Make the nav-link position relative */
+}
+
+.hover-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    /* Initially hide the box */
+    width: 250px;
+    padding: 20px;
+    background-color: #464647;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover .hover-box {
+    display: block;
+    /* Show the box when hovering over the nav-link */
+}

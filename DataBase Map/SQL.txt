@@ -1,0 +1,134 @@
+
+CREATE DATABASE IF NOT EXISTS `ecommercedb`;
+USE `ecommercedb`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+
+CREATE TABLE IF NOT EXISTS `cart` (
+  `cart_id` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int DEFAULT NULL,
+  `product_id` int DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `quantity` int DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`cart_id`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+  `category_id` int NOT NULL AUTO_INCREMENT,
+  `category_name` text ,
+  PRIMARY KEY (`category_id`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE IF NOT EXISTS `contacts` (
+  `contact_id` int NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `sex` enum('Male','Female','Other') DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `comment` text,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`contact_id`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customers`
+--
+
+
+CREATE TABLE IF NOT EXISTS `customers` (
+  `customer_id` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `state` varchar(255) DEFAULT NULL,
+  `country` varchar(255) DEFAULT NULL,
+  `zip_code` varchar(255) DEFAULT NULL,
+  `gender` varchar(20) DEFAULT NULL,
+  `usertype` varchar(20) NOT NULL DEFAULT 'user',
+  `balance` decimal(10,2) DEFAULT '0.00',
+  PRIMARY KEY (`customer_id`)
+);
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE IF NOT EXISTS `orders` (
+  `order_id` int NOT NULL AUTO_INCREMENT,
+  `customer_id` int DEFAULT NULL,
+  `order_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `total_price` decimal(10,2) DEFAULT NULL,
+  `payment_method` varchar(50) DEFAULT NULL,
+  `shipping_address` varchar(255) DEFAULT NULL,
+  `status` varchar(50) DEFAULT 'Pending',
+  `customer_name` varchar(100) DEFAULT NULL,
+  `customer_phone` varchar(20) DEFAULT NULL,
+  `customer_address` varchar(255) DEFAULT NULL,
+  `quantity` int DEFAULT '1',
+  PRIMARY KEY (`order_id`),
+  KEY `customer_id` (`customer_id`)
+) ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_items`
+--
+
+
+CREATE TABLE IF NOT EXISTS `order_items` (
+  `item_id` int NOT NULL AUTO_INCREMENT,
+  `order_id` int DEFAULT NULL,
+  `product_id` int DEFAULT NULL,
+  `quantity` int DEFAULT NULL,
+  `product_price` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`item_id`),
+  KEY `order_id` (`order_id`),
+  KEY `product_id` (`product_id`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE IF NOT EXISTS `products` (
+  `product_id` int NOT NULL AUTO_INCREMENT,
+  `product_name` varchar(255) DEFAULT NULL,
+  `description` text,
+  `price` decimal(10,2) DEFAULT NULL,
+  `image_url` varchar(255) DEFAULT NULL,
+  `category_id` int DEFAULT NULL,
+  `category_name` varchar(20) DEFAULT NULL,
+  `quantity` int DEFAULT '1',
+  PRIMARY KEY (`product_id`),
+  KEY `category_id` (`category_id`),
+  KEY `category_name` (`category_name`)
+); 
+--

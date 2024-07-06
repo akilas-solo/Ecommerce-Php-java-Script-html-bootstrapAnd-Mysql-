@@ -1,0 +1,245 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+#cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-desc{
+    width: 600px;
+    height: 40vh;
+    margin-left: 30px;
+    background-color: rgb(250, 244, 244);
+    box-shadow: 7px 7px 3px rgb(197, 192, 192);
+    border-radius: 6px;
+  }  
+  
+  .disc #discription h6{
+    margin-top: 20px;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 40px;
+  }
+  .disc #discription  h3{
+    margin-top: 20px;
+    font-size:30px;
+    
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 50px;
+  }
+
+
+ /* Table Styling */
+ .table-container {
+   width: 100%;
+   overflow: auto; 
+   max-height: 50vh;
+   box-shadow: 5px 7px 3px rgb(197, 192, 192);
+   border-radius: 10px;
+}
+.table-body {
+  width: 100%;
+  max-height: calc(100% - 40px); /* Adjust the value based on the table header height */
+  overflow-y: scroll;
+}
+
+ .cart-table {
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 20px;
+  max-height: 80vh; /* Adjust height as needed */
+  width: 100%;
+ 
+  border-radius: 6px;
+}
+  .cart-table th{
+    position: sticky;
+    top: 0;
+   }
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+}
+
+.cart-table td {
+  background-color: #fff;
+  color: #555;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* Remove Button Styling */
+.remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Quantity Input Styling */
+.quantity-input {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+tr td img{
+  width: 100px;
+}
+ .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .cart-table th, .cart-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .cart-table th {
+            background-color: #f2f2f2;
+        }
+
+        .quantity-input {
+            width: 60px;
+        }
+
+        .btn-danger, .btn-success {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+        .fixed-update-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+
+   /* Styles for small screens */
+@media screen and (max-width: 600px) {
+  /* Modify the cart and phone-cart styles */
+  #cart, .phone-cart {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* Modify the cart-desc styles */
+  .cart-desc {
+    margin-left: 0;
+  }
+
+  /* Modify the table styles */
+  table {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Modify other styles as needed */
+}
+
+@media screen and (max-width: 850px) {
+    #cart{
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-desc{
+      margin-top: 40px;
+      width: 100%;
+      align-items: center;
+    }
+    tbody tr td .disc{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Divide the row into three equal-width columns */
+      gap: 10px;
+      text-align: center;
+    }
+    tbody tr td #cart-name{
+      font-size: 17px;
+      margin: 20px 14px 10px 10px;
+      
+    }
+    #discription{
+      width: 150px;
+    }
+    tbody tr td button{
+      padding: 8px !important;
+      font-size: 15px !important;
+      width: 100px;
+      margin: 0;
+      align-items: center;
+    }
+    tbody tr img{
+      width: 170px;
+      height: 20vh;
+      margin-left: 10px;
+      border-radius: 8px;
+    }
+    .cart-desc{
+      width: 100%;
+    }
+    #discription h5{
+        font-size: 15px;
+    }
+}
+/* Styles for medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Modify the cart and phone-cart styles */
+  #cart .phone-cart{
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* Modify the cart-desc styles */
+  .cart-desc {
+    margin-left: 0;
+  }
+
+  /* Modify the table styles */
+  table {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* Modify other styles as needed */
+}
+@media screen and (max-width: 480px){
+  .disc #discription h5{
+    font-size: 25px !important;
+    
+    }
+  .disc #discription h3{
+        font-size: 19px !important;
+    }
+}
